@@ -154,13 +154,10 @@ class _HomeState extends State<Home> {
 
           Scaffold.of(context).removeCurrentSnackBar();
           Scaffold.of(context).showSnackBar(snack);
-
         });
       },
     );
   }
-
-  /**/
 
   Future<File> _getFile() async {
     final directory = await getApplicationDocumentsDirectory();
